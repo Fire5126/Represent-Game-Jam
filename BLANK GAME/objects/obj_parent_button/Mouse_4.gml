@@ -1,1 +1,1 @@
-audio_play_sound(Random_Sfx, 1, false);
+audio_play_sound(Random_Sfx, 1, false, global.SFXSLIDER);
