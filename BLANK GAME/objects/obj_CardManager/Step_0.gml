@@ -40,6 +40,7 @@ if mouse_check_button_pressed(mb_left)
 			//place sqaures
 			if placeable
 			{
+				audio_play_sound(Pick_up, 1, false);
 				switch(placeType){
 					//tile
 					case 0:

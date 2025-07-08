@@ -1,0 +1,1 @@
+audio_play_sound(Random_Sfx, 1, false);
