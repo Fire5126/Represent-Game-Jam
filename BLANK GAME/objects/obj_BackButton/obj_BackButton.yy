@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_StartButton",
+  "%Name":"obj_BackButton",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_StartButton",
+  "name":"obj_BackButton",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent_button","path":"objects/obj_parent_button/obj_parent_button.yy",},"propertyId":{"name":"button_text","path":"objects/obj_parent_button/obj_parent_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Start",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent_button","path":"objects/obj_parent_button/obj_parent_button.yy",},"propertyId":{"name":"button_text","path":"objects/obj_parent_button/obj_parent_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Back",},
   ],
   "parent":{
     "name":"Objects",
