@@ -1,4 +1,4 @@
-gridSize = 5;
+gridSize = 20;
 
 player = 1;
 
@@ -7,9 +7,14 @@ placeTurn = 3;
 
 cellSize = (room_width/gridSize)*2/3;
 
+image_xscale = cellSize;
+image_yscale = cellSize;
+
 x1 = room_width/6;
 
-placeType = 1;
+placeType = 0;
+
+placeable = false;
 
 var i = 0;
 var j = 0;
@@ -21,3 +26,5 @@ repeat(gridSize+1){
 	j++;
 	i = 0;
 }
+
+u_rgb = shader_get_uniform(shd_Players, "u_rgb");
