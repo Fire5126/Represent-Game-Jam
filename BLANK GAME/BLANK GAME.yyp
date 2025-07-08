@@ -36,8 +36,10 @@
   "name":"BLANK GAME",
   "resources":[
     {"id":{"name":"fnt_Game","path":"fonts/fnt_Game/fnt_Game.yy",},},
-    {"id":{"name":"obj_Button","path":"objects/obj_Button/obj_Button.yy",},},
     {"id":{"name":"obj_CardManager","path":"objects/obj_CardManager/obj_CardManager.yy",},},
+    {"id":{"name":"obj_CharacterSelectButton","path":"objects/obj_CharacterSelectButton/obj_CharacterSelectButton.yy",},},
+    {"id":{"name":"obj_PlayersButton","path":"objects/obj_PlayersButton/obj_PlayersButton.yy",},},
+    {"id":{"name":"obj_StartButton","path":"objects/obj_StartButton/obj_StartButton.yy",},},
     {"id":{"name":"rm_Game","path":"rooms/rm_Game/rm_Game.yy",},},
     {"id":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},},

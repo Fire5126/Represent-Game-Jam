@@ -9,6 +9,8 @@ cellSize = (room_width/gridSize)*2/3;
 
 x1 = room_width/6;
 
+placeType = 1;
+
 var i = 0;
 var j = 0;
 repeat(gridSize+1){
