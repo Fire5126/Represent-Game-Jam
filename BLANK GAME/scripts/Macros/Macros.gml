@@ -1,1 +1,1 @@
-global.PLAYERNUMB = 2;
+global.PLAYERNUMB = 3;
