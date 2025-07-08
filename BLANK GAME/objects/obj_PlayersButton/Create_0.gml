@@ -1,7 +1,7 @@
 playerSelection = 0;
 maxPlayers = 10
 
-
+randomize();
 
 // name, sprite, colour
 players[0] = ["Toby",Aromatic,CreateRandomColour()]
