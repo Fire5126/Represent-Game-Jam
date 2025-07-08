@@ -12,6 +12,6 @@ if mouse_check_button_pressed(mb_left) && point_in_rectangle(mouse_x,mouse_y,bbo
 }
 
 if instance_number(obj_PlayersButton) < playerNumb {
-	instance_create_depth(room_width/10*playerNumb,room_height/2,0,obj_PlayersButton,{
+	instance_create_depth(room_width/8*playerNumb,room_height/4,0,obj_PlayersButton,{
 		playerNumber : playerNumb})
 }

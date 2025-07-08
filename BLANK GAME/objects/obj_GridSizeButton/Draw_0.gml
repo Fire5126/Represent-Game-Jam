@@ -13,9 +13,8 @@ else{
 	draw_button(bbox_right,bbox_top,x,bbox_bottom,true);
 	draw_button(bbox_left,bbox_top,x,bbox_bottom,true);
 }
-
 draw_set_colour(c_black);
 draw_set_font(fnt_mune);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text(x,y,"Player Count");
+draw_text(x,y,"Grid Size: "+string(global.GRIDSIZE));

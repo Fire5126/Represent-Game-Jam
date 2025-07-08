@@ -25,3 +25,4 @@ global.PLAYERNUMB = 0;
 //global.p6Name = 0;
 //global.p6Sprite = 0;
 //global.p6Colour = 0;
+global.GRIDSIZE = 7;
