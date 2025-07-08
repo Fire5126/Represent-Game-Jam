@@ -2,8 +2,8 @@ gridSize = 10;
 
 player = 1;
 
-placementTurns = 1;
-placeTurn = 1;
+placementTurns = 3;
+placeTurn = 3;
 
 cellSize = (room_width/gridSize)*2/3;
 
