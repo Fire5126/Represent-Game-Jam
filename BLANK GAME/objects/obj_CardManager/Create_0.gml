@@ -42,23 +42,39 @@ patterns = [
 [[0,0], [0,1]],
 //diagonal right down
 [[0,0], [1,-1]],
-//cross
+//clover
 [[0,0], [-1,1], [1,1], [-1,-1], [1,-1]], 
+//hollow cross
 [[-1,0], [0,1], [1,0], [0,-1]], 
+//diagonal left down
 [[0,0], [-1,-1]], 
+//left concave curve
 [[-1,1], [0,0], [1,0]], 
+//full cross
 [[-1,0], [0,0], [0,1], [0,-1], [1,0]], 
+//rightward diagonal
 [[-1,-1], [0,0], [1,1]], 
+//right concave curve
 [[-1,0], [0,0], [1,1]], 
+//leftward diagonal
 [[-1,1], [0,0], [1,-1]], 
+//right convex curve
 [[-1,0], [0,0], [1,-1]], 
+//c
 [[0,0], [0,1], [0,-1], [1,1], [1,-1]], 
+//left convex curve
 [[-1,-1], [0,0], [1,0]],
+//left jump
 [[0,-1], [1,0]],
+//right jump
 [[0,-1], [1,1]],
+//up right corner
 [[0,0], [0,1], [1,0]],
+//up left corner
 [[-1,0], [0,0], [0,1]],
+//down right corner
 [[0,0], [0,-1], [1,0]],
+//down left corner
 [[-1,0], [0,0], [0,-1]]];
 
 i = 0;
