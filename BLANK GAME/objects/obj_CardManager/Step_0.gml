@@ -16,6 +16,7 @@ if mouse_check_button_pressed(mb_left)
 					break;
 				//hollow cross
 				case 1:
+					if _xCoord - 1 < 0 &&
 					if cardGrid[_xCoord+1][_yCoord] == 0 && 
 					cardGrid[_xCoord-1][_yCoord] == 0 &&
 					cardGrid[_xCoord][_yCoord+1] == 0 &&
@@ -62,16 +63,17 @@ if mouse_check_button_pressed(mb_left)
 				
 				
 				}
-			}
 			
-			placeTurn--;
-			placeType = choose(0,1,2);
-			if placeTurn == 0{
-				placeTurn = placements;
-				player++;
-				if (player > global.PLAYERNUMB)
-				{
-					player = 1;
+			
+				placeTurn--;
+				placeType = choose(0,1,2);
+				if placeTurn == 0{
+					placeTurn = placements;
+					player++;
+					if (player > global.PLAYERNUMB)
+					{
+						player = 1;
+					}
 				}
 			}
 		}

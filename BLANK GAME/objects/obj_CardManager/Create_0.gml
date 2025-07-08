@@ -1,4 +1,4 @@
-gridSize = 20;
+gridSize = 7;
 
 player = 1;
 
@@ -28,3 +28,4 @@ repeat(gridSize+1){
 }
 
 u_rgb = shader_get_uniform(shd_Players, "u_rgb");
+playerColour = c_yellow;

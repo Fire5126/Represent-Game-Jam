@@ -24,9 +24,25 @@ repeat(gridSize){
 	i = 0;
 }
 
+//set ghost colour to player colour
+switch(player){
+	case 1:
+		playerColour = c_blue;
+		break;
+	case 2:
+		playerColour = c_green;
+		break;
+	case 3:
+		playerColour = c_yellow;
+		break;
+}
+
 //draw the placement
 shader_set(shd_Players);
 
-shader_set_uniform_f_array(u_rgb,[0.5,0.5,0.5]);
+shader_set_uniform_f_array(u_rgb,
+	[colour_get_red(playerColour),
+	colour_get_green(playerColour),
+	colour_get_blue(playerColour)]);
 draw_self();
 shader_reset();
