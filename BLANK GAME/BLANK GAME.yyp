@@ -78,6 +78,7 @@
     {"id":{"name":"Non_Binary","path":"sprites/Non_Binary/Non_Binary.yy",},},
     {"id":{"name":"Pan","path":"sprites/Pan/Pan.yy",},},
     {"id":{"name":"Pride_Character","path":"sprites/Pride_Character/Pride_Character.yy",},},
+    {"id":{"name":"Slider_Empty","path":"sprites/Slider_Empty/Slider_Empty.yy",},},
     {"id":{"name":"spr_buuton","path":"sprites/spr_buuton/spr_buuton.yy",},},
     {"id":{"name":"spr_catground","path":"sprites/spr_catground/spr_catground.yy",},},
     {"id":{"name":"spr_FullCross","path":"sprites/spr_FullCross/spr_FullCross.yy",},},
