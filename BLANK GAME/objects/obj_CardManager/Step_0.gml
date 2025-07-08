@@ -1,6 +1,5 @@
 if mouse_check_button_pressed(mb_left)
 {
-	//mouse on board
 	if mouse_x < cellSize*gridSize+x1 && mouse_x > x1 && mouse_y < cellSize*gridSize+x1 && mouse_y > x1 {
 		{
 			//grab cell numbers
@@ -74,25 +73,7 @@ if mouse_check_button_pressed(mb_left)
 					{
 						player = 1;
 					}
-				}
-			}
+	
 		}
 	}
 }
-
-//placement colour
-
-//ghost placement
-switch(placeType){
-	case 0:
-		sprite_index = spr_Tile;
-		break;
-	case 1:
-		sprite_index = spr_HollowCross;
-		break;
-	case 2:
-		sprite_index = spr_FullCross;
-		break;
-}
-x = mouse_x-sprite_width/2;
-y = mouse_y-sprite_height/2;

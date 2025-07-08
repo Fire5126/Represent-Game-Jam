@@ -14,10 +14,6 @@ repeat(gridSize){
 			draw_set_colour(c_green)
 			draw_rectangle(x1+i*cellSize,x1+j*cellSize,x1+(i+1)*cellSize,x1+(j+1)*cellSize,false)
 		}
-		if cardGrid[i][j] == 3{
-			draw_set_colour(c_yellow)
-			draw_rectangle(x1+i*cellSize,x1+j*cellSize,x1+(i+1)*cellSize,x1+(j+1)*cellSize,false)
-		}
 		i++;
 	}
 	j++;
