@@ -2,8 +2,8 @@ var i = 0;
 var j = 0;
 var difpoints = 0;
 var samepoints = 0;
-repeat(gridSize){
-	repeat(gridSize){
+repeat(global.GRIDSIZE){
+	repeat(global.GRIDSIZE){
 		var matchingNeighbour = 0;
 		var differentNeighbour = 0;
 		var k = 1;
@@ -11,9 +11,9 @@ repeat(gridSize){
 		{
 			if cardGrid[i][j] == k
 			{
-				if (i < gridSize) if (cardGrid[i+1][j] == k) matchingNeighbour++;
+				if (i < global.GRIDSIZE) if (cardGrid[i+1][j] == k) matchingNeighbour++;
 				if (i != 0) if (cardGrid[i-1][j] == k) matchingNeighbour++;
-				if (j < gridSize) if (cardGrid[i][j+1] == k) matchingNeighbour++;
+				if (j < global.GRIDSIZE) if (cardGrid[i][j+1] == k) matchingNeighbour++;
 				if (j != 0 )if (cardGrid[i][j-1] == k) matchingNeighbour++;
 				if (matchingNeighbour > 0){
 					samepoints++;
@@ -31,9 +31,9 @@ repeat(gridSize){
 					draw_set_alpha(1);
 				}
 				
-				if (i < gridSize) if (cardGrid[i+1][j] != k) && (cardGrid[i+1][j] != 0) differentNeighbour++;
+				if (i < global.GRIDSIZE) if (cardGrid[i+1][j] != k) && (cardGrid[i+1][j] != 0) differentNeighbour++;
 				if (i != 0) if (cardGrid[i-1][j] != k) && (cardGrid[i-1][j] != 0) differentNeighbour++;
-				if (j < gridSize) if (cardGrid[i][j+1] != k) && (cardGrid[i][j+1] != 0) differentNeighbour++;
+				if (j < global.GRIDSIZE) if (cardGrid[i][j+1] != k) && (cardGrid[i][j+1] != 0) differentNeighbour++;
 				if (j != 0 ) if (cardGrid[i][j-1] != k) && (cardGrid[i+1][j-1] != 0) differentNeighbour++;
 				if (differentNeighbour > 0){
 					difpoints++;

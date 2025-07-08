@@ -42,6 +42,7 @@
     {"id":{"name":"obj_CharacterSelectButton","path":"objects/obj_CharacterSelectButton/obj_CharacterSelectButton.yy",},},
     {"id":{"name":"obj_EXIT_button","path":"objects/obj_EXIT_button/obj_EXIT_button.yy",},},
     {"id":{"name":"obj_gameMusic","path":"objects/obj_gameMusic/obj_gameMusic.yy",},},
+    {"id":{"name":"obj_GridSizeButton","path":"objects/obj_GridSizeButton/obj_GridSizeButton.yy",},},
     {"id":{"name":"obj_menuMusic","path":"objects/obj_menuMusic/obj_menuMusic.yy",},},
     {"id":{"name":"obj_parent_button","path":"objects/obj_parent_button/obj_parent_button.yy",},},
     {"id":{"name":"obj_PlayerNumberButton","path":"objects/obj_PlayerNumberButton/obj_PlayerNumberButton.yy",},},

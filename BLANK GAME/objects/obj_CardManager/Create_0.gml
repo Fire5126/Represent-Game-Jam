@@ -1,11 +1,9 @@
-gridSize = 10;
-
 player = 1;
 
 placementTurns = 3;
 placeTurn = 3;
 
-cellSize = (room_width/gridSize)*2/3;
+cellSize = (room_width/global.GRIDSIZE)*2/3;
 
 image_xscale = cellSize;
 image_yscale = cellSize;
@@ -20,8 +18,8 @@ placements = 0;
 
 var i = 0;
 var j = 0;
-repeat(gridSize+1){
-	repeat(gridSize+1){
+repeat(global.GRIDSIZE+1){
+	repeat(global.GRIDSIZE+1){
 		cardGrid[i][j] = 0;
 		i++;
 	}
