@@ -1,1 +1,1 @@
-audio_play_sound(even_slower, 0, false);
+audio_play_sound(even_slower, 0, false, global.MUSICSLIDER);

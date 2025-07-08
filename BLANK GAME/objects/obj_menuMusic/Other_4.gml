@@ -1,1 +1,1 @@
-audio_play_sound(Main_menu_music, 0, true);
+audio_play_sound(Main_menu_music, 0, true, global.MUSICSLIDER);
