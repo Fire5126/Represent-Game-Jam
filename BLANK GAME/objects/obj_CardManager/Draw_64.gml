@@ -56,10 +56,11 @@ repeat(gridSize){
 	}
 	j++;
 	i = 0;
-}
+}	
 draw_set_font(fnt_Game)
 draw_set_valign(fa_middle)
 draw_set_halign(fa_center)
 draw_set_alpha(1)
 draw_text(room_width/5*2,30,samepoints)
 draw_text(room_width/5*3,30,difpoints)
+draw_text(room_width/5*3,50,placeType)
