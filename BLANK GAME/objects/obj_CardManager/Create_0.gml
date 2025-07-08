@@ -48,8 +48,8 @@ patterns = [
 [[0,0], [-1,-1]], 
 //left concave curve
 [[-1,1], [0,0], [1,0]], 
-//full cross
-[[-1,0], [0,0], [0,1], [0,-1], [1,0]], 
+//hollow cross 2
+[[-1,0], [0,1], [0,-1], [1,0]], 
 //rightward diagonal
 [[-1,-1], [0,0], [1,1]], 
 //right concave curve
@@ -63,7 +63,7 @@ patterns = [
 //left convex curve
 [[-1,-1], [0,0], [1,0]],
 //left jump
-[[0,-1], [1,0]],
+[[0,-1], [-1,1]],
 //right jump
 [[0,-1], [1,1]],
 //up right corner
