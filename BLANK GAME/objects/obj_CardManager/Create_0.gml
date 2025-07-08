@@ -54,8 +54,8 @@ patterns = [
 [[-1,0], [0,0], [1,-1]], 
 [[0,0], [0,1], [0,-1], [1,1], [1,-1]], 
 [[-1,-1], [0,0], [1,0]],
-[[-1,1], [0,-1], [1,0]],
-[[-1,0], [0,-1], [1,1]],
+[[0,-1], [1,0]],
+[[0,-1], [1,1]],
 [[0,0], [0,1], [1,0]],
 [[-1,0], [0,0], [0,1]],
 [[0,0], [0,-1], [1,0]],
@@ -70,6 +70,7 @@ repeat(array_length(patterns)) {
 
 i = 0
 var holder;
+randomize();
 
 repeat(array_length(patterns)) {
 	target = irandom(array_length(patterns) - 1);
@@ -81,7 +82,6 @@ repeat(array_length(patterns)) {
 
 
 sprite_index = -1;
-randomize();
 
 test = 0;
 
