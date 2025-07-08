@@ -60,6 +60,7 @@
     {"id":{"name":"Main_menu_music","path":"sounds/Main_menu_music/Main_menu_music.yy",},},
     {"id":{"name":"Pause_menu_music","path":"sounds/Pause_menu_music/Pause_menu_music.yy",},},
     {"id":{"name":"Pick_up","path":"sounds/Pick_up/Pick_up.yy",},},
+    {"id":{"name":"Place_down","path":"sounds/Place_down/Place_down.yy",},},
     {"id":{"name":"Random_Sfx","path":"sounds/Random_Sfx/Random_Sfx.yy",},},
     {"id":{"name":"Slower_paced_in_game_background_music","path":"sounds/Slower_paced_in_game_background_music/Slower_paced_in_game_background_music.yy",},},
     {"id":{"name":"Trial_bounce_in_game_background_music","path":"sounds/Trial_bounce_in_game_background_music/Trial_bounce_in_game_background_music.yy",},},
