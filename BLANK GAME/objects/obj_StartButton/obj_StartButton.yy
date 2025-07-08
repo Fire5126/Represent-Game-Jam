@@ -1,15 +1,22 @@
 {
   "$GMObject":"",
   "%Name":"obj_StartButton",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_StartButton",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent_button","path":"objects/obj_parent_button/obj_parent_button.yy",},"propertyId":{"name":"button_text","path":"objects/obj_parent_button/obj_parent_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Start",},
+  ],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_parent_button",
+    "path":"objects/obj_parent_button/obj_parent_button.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_buuton",
+    "path":"sprites/spr_buuton/spr_buuton.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

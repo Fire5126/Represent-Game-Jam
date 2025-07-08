@@ -1,0 +1,1 @@
+audio_stop_sound(Pause_menu_music);
