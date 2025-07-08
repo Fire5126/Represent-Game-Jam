@@ -24,7 +24,7 @@ repeat(gridSize){
 				}
 		
 				if (matchingNeighbour > 2){
-					samepoints -= 3;
+					samepoints += 2;
 					draw_set_colour(c_black)
 					draw_set_alpha(0.5);
 					draw_rectangle(x1+i*cellSize,x1+j*cellSize,x1+(i+1)*cellSize,x1+(j+1)*cellSize,true)
@@ -43,7 +43,7 @@ repeat(gridSize){
 					draw_set_alpha(1);
 				}
 				if (differentNeighbour > 2){
-					difpoints -= 3;
+					difpoints += 5;
 					draw_set_colour(c_black)
 					draw_set_alpha(0.5);
 					draw_rectangle(x1+i*cellSize,x1+j*cellSize,x1+(i+1)*cellSize,x1+(j+1)*cellSize,true)
@@ -62,6 +62,6 @@ draw_set_font(fnt_Game)
 draw_set_valign(fa_middle)
 draw_set_halign(fa_center)
 draw_set_alpha(1)
-draw_text(room_width/2,room_height/10,samepoints+difpoints)
-//draw_text(room_width/5*3,30,difpoints)
+//draw_text(room_width/2,30,samepoints)
+draw_text(room_width/2,30,"POINTS " + string(difpoints))
 //draw_text(room_width/5*3,80,test)
