@@ -24,6 +24,24 @@ repeat(gridSize){
 	i = 0;
 }
 
+
+//draw ghost block
+if !finished{
+	i = 0;
+	var _xOff = 0;
+	var _yOff = 0;
+	var _pattern = order[placements];
+	repeat(array_length(patterns[_pattern]))
+	{
+		_xOff = patterns[order[placements]][i][0];
+		_yOff = patterns[order[placements]][i][1];
+		draw_sprite_ext(spr_Tile,0,mouse_x-cellSize/2-_xOff*cellSize,mouse_y-cellSize/2-_yOff*cellSize,cellSize,cellSize,0,playerColour,1);
+		i++;
+	}
+}
+
+
+
 //set ghost colour to player colour
 switch(player){
 	case 1:
