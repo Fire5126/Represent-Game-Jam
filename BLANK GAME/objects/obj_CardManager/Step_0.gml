@@ -16,8 +16,8 @@ if mouse_check_button_pressed(mb_left)
 					break;
 				//hollow cross
 				case 1:
-					if _xCoord - 1 < 0 &&
-					if cardGrid[_xCoord+1][_yCoord] == 0 && 
+					if _xCoord - 1 > -1 &&
+					cardGrid[_xCoord+1][_yCoord] == 0 && 
 					cardGrid[_xCoord-1][_yCoord] == 0 &&
 					cardGrid[_xCoord][_yCoord+1] == 0 &&
 					cardGrid[_xCoord][_yCoord-1] == 0
