@@ -6,16 +6,8 @@ repeat(gridSize){
 			draw_set_colour(c_black)
 			draw_rectangle(x1+i*cellSize,x1+j*cellSize,x1+(i+1)*cellSize,x1+(j+1)*cellSize,true)
 		}
-		if cardGrid[i][j] == 1{
-			draw_set_colour(global.p1Colour)
-			draw_rectangle(x1+i*cellSize,x1+j*cellSize,x1+(i+1)*cellSize,x1+(j+1)*cellSize,false)
-		}
-		if cardGrid[i][j] == 2{
-			draw_set_colour(global.p2Colour)
-			draw_rectangle(x1+i*cellSize,x1+j*cellSize,x1+(i+1)*cellSize,x1+(j+1)*cellSize,false)
-		}
-		if cardGrid[i][j] == 3{
-			draw_set_colour(global.p3Colour)
+		else{
+			draw_set_colour(variable_global_get("p"+string(cardGrid[i][j])+"Colour"))
 			draw_rectangle(x1+i*cellSize,x1+j*cellSize,x1+(i+1)*cellSize,x1+(j+1)*cellSize,false)
 		}
 		i++;
