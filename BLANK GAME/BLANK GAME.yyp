@@ -52,6 +52,7 @@
     {"id":{"name":"obj_SliderSFX","path":"objects/obj_SliderSFX/obj_SliderSFX.yy",},},
     {"id":{"name":"obj_StartButton","path":"objects/obj_StartButton/obj_StartButton.yy",},},
     {"id":{"name":"rm_Game","path":"rooms/rm_Game/rm_Game.yy",},},
+    {"id":{"name":"rm_HowTo","path":"rooms/rm_HowTo/rm_HowTo.yy",},},
     {"id":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"id":{"name":"rm_Setting","path":"rooms/rm_Setting/rm_Setting.yy",},},
     {"id":{"name":"CreateRandomColour","path":"scripts/CreateRandomColour/CreateRandomColour.yy",},},
@@ -74,6 +75,7 @@
     {"id":{"name":"Bisexual","path":"sprites/Bisexual/Bisexual.yy",},},
     {"id":{"name":"Gay_","path":"sprites/Gay_/Gay_.yy",},},
     {"id":{"name":"Intersex","path":"sprites/Intersex/Intersex.yy",},},
+    {"id":{"name":"Lesbian","path":"sprites/Lesbian/Lesbian.yy",},},
     {"id":{"name":"Non_Binary","path":"sprites/Non_Binary/Non_Binary.yy",},},
     {"id":{"name":"Pan","path":"sprites/Pan/Pan.yy",},},
     {"id":{"name":"Pride_Character","path":"sprites/Pride_Character/Pride_Character.yy",},},
@@ -91,6 +93,7 @@
     {"roomId":{"name":"rm_Menu","path":"rooms/rm_Menu/rm_Menu.yy",},},
     {"roomId":{"name":"rm_Game","path":"rooms/rm_Game/rm_Game.yy",},},
     {"roomId":{"name":"rm_Setting","path":"rooms/rm_Setting/rm_Setting.yy",},},
+    {"roomId":{"name":"rm_HowTo","path":"rooms/rm_HowTo/rm_HowTo.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
