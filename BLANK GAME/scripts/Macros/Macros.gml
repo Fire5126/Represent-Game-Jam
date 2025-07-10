@@ -1,6 +1,7 @@
 global.MUSICSLIDER = 1;
 global.SFXSLIDER = 1;
 global.PLAYERNUMB = 0;
+global.ENDLESS = false;
 
 //global.p1Name = 0;
 //global.p1Sprite = 0;

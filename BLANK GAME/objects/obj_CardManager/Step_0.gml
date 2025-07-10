@@ -52,7 +52,26 @@ if mouse_check_button_pressed(mb_left) && !finished
 			placeTurn--;
 			placements++;
 			if placements == array_length(order){
-				finished = true;
+				if !global.ENDLESS{					
+					finished = true;
+				}else{
+					randomize();
+					i = 0
+					repeat(array_length(patterns)) {
+						order[i] = i;
+						i++;
+						}
+					i = 0;
+					repeat(array_length(patterns)) {
+						target = irandom(array_length(patterns) - 1);
+						var holder = order[i];
+						order[i] = order[target];
+						order[target] = holder;
+						i++;
+					}					
+					placements = 0;
+				}
+				
 			}
 			if placeTurn == 0{
 				placeTurn = placementTurns;

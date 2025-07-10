@@ -37,10 +37,12 @@
   "resources":[
     {"id":{"name":"fnt_Game","path":"fonts/fnt_Game/fnt_Game.yy",},},
     {"id":{"name":"fnt_mune","path":"fonts/fnt_mune/fnt_mune.yy",},},
+    {"id":{"name":"fnt_muneSmall","path":"fonts/fnt_muneSmall/fnt_muneSmall.yy",},},
     {"id":{"name":"obj_BackButton","path":"objects/obj_BackButton/obj_BackButton.yy",},},
     {"id":{"name":"obj_CardManager","path":"objects/obj_CardManager/obj_CardManager.yy",},},
     {"id":{"name":"obj_CharacterSelectButton","path":"objects/obj_CharacterSelectButton/obj_CharacterSelectButton.yy",},},
     {"id":{"name":"obj_Continue_Button","path":"objects/obj_Continue_Button/obj_Continue_Button.yy",},},
+    {"id":{"name":"obj_EndlessButton","path":"objects/obj_EndlessButton/obj_EndlessButton.yy",},},
     {"id":{"name":"obj_EXIT_button","path":"objects/obj_EXIT_button/obj_EXIT_button.yy",},},
     {"id":{"name":"obj_gameMusic","path":"objects/obj_gameMusic/obj_gameMusic.yy",},},
     {"id":{"name":"obj_GridSizeButton","path":"objects/obj_GridSizeButton/obj_GridSizeButton.yy",},},

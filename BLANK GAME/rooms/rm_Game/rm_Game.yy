@@ -9,6 +9,7 @@
     {"name":"inst_7D4696B9","path":"rooms/rm_Game/rm_Game.yy",},
     {"name":"inst_74D8E309","path":"rooms/rm_Game/rm_Game.yy",},
     {"name":"inst_54B2C413","path":"rooms/rm_Game/rm_Game.yy",},
+    {"name":"inst_66BE3F4A","path":"rooms/rm_Game/rm_Game.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -40,6 +41,7 @@
         {"$GMRInstance":"v2","%Name":"inst_54B2C413","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_54B2C413","objectId":{"name":"obj_Restart_Button","path":"objects/obj_Restart_Button/obj_Restart_Button.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_parent_button","path":"objects/obj_parent_button/obj_parent_button.yy",},"propertyId":{"name":"button_text","path":"objects/obj_parent_button/obj_parent_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Restart",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":64.0,},
+        {"$GMRInstance":"v2","%Name":"inst_66BE3F4A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_66BE3F4A","objectId":{"name":"obj_BackButton","path":"objects/obj_BackButton/obj_BackButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":64.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_5E88AF4B","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_5E88AF4B","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":9.96,"scaleY":9.96,"spriteId":{"name":"spr_catground","path":"sprites/spr_catground/spr_catground.yy",},"x":0.0,"y":0.0,},

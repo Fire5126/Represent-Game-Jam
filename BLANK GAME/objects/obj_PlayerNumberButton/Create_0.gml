@@ -1,5 +1,5 @@
 playerSelection = 0;
-maxPlayers = 10
+maxPlayers = 9
 
 
 playerNumb = 0;

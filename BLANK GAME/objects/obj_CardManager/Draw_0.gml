@@ -37,12 +37,17 @@ if !finished{
 //set ghost colour to player colour
 playerColour = variable_global_get("p"+string(player)+"Colour");
 
+if !is_numeric(playerColour){
+	playerColour = CreateRandomColour();
+	variable_global_set("p"+string(player)+"Colour",playerColour);
+}
+
 //draw the placement
 shader_set(shd_Players);
 
 shader_set_uniform_f_array(u_rgb,
-	[colour_get_red(playerColour),
-	colour_get_green(playerColour),
-	colour_get_blue(playerColour)]);
+	[color_get_red(playerColour),
+	color_get_green(playerColour),
+	color_get_blue(playerColour)]);
 draw_self();
 shader_reset();

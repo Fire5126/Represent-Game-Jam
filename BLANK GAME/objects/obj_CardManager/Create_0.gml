@@ -10,8 +10,6 @@ image_yscale = cellSize;
 
 x1 = room_width/6;
 
-placeType = 0;
-
 placeable = false;
 
 placements = 0;
@@ -82,7 +80,7 @@ repeat(array_length(patterns)) {
 	i++;
 }
 
-i = 0
+i = 0;
 var holder;
 randomize();
 
@@ -96,7 +94,5 @@ repeat(array_length(patterns)) {
 
 
 sprite_index = -1;
-
-test = 0;
 
 finished = false;
