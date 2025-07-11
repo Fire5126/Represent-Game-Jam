@@ -3,3 +3,5 @@ maxPlayers = 9
 
 
 playerNumb = 0;
+
+global.PLAYERNUMB = 0;
