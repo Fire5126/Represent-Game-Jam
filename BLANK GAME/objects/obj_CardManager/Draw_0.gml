@@ -1,5 +1,6 @@
 var i = 0;
 var j = 0;
+var offset = 0;
 repeat(global.GRIDSIZE){
 	repeat(global.GRIDSIZE){
 		if cardGrid[i][j] == 0{
@@ -8,7 +9,8 @@ repeat(global.GRIDSIZE){
 		}
 		else{
 			draw_set_colour(variable_global_get("p"+string(cardGrid[i][j])+"Colour"))
-			draw_rectangle(x1+i*cellSize,x1+j*cellSize,x1+(i+1)*cellSize,x1+(j+1)*cellSize,false)
+			if (finished) offset = random_range(-1,1)*cellSize/30
+			draw_rectangle(x1+i*cellSize+offset,x1+j*cellSize+offset,x1+(i+1)*cellSize+offset,x1+(j+1)*cellSize+offset,false)
 		}
 		i++;
 	}
