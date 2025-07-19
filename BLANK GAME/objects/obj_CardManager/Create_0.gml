@@ -126,3 +126,5 @@ repeat(array_length(patterns)) {
 
 //turns true once all patterns have been used up/when placements equalss the length of the patterns array.
 finished = false;
+
+test = 0;

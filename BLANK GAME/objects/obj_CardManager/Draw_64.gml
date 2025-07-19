@@ -71,4 +71,4 @@ draw_set_alpha(1)
 //draw_text(room_width/2,30,samepoints)
 
 draw_text(room_width/2,room_height/10,"Points " + string(difpoints))
-//draw_text(room_width/5*3,80,test)
+//draw_text(room_width/5*1,40,test)

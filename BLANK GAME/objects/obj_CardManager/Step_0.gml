@@ -41,7 +41,7 @@ if mouse_check_button_pressed(mb_left) && !finished
 			i = 0;
 			repeat(array_length(patterns[_pattern]))
 			{
-				cardGrid[_xCoord-patterns[order[placements]][i][0]][_yCoord-patterns[order[placements]][i][1]] = player;
+				cardGrid[_xCoord-patterns[_pattern][i][0]][_yCoord-patterns[_pattern][i][1]] = player;
 				i++;
 			}		
 			placeTurn--;
@@ -65,8 +65,42 @@ if mouse_check_button_pressed(mb_left) && !finished
 						i++;
 					}					
 					placements = 0;
-				}		
+				}	
 			}
+				
+			//check if next is possible
+			finished = true;
+			var free = 0;
+			var _y = 0;
+			repeat(global.GRIDSIZE){
+				var _x = 0;
+				repeat(global.GRIDSIZE){
+					i = 0;
+					free = 0;
+					repeat(array_length(patterns[order[placements]]))
+					{
+						//get the x and y of the tile being checked in the pattern
+						var _xComponent = _x-patterns[order[placements]][i][0];
+						var _yComponent = _y-patterns[order[placements]][i][1];
+						//if it is on the board...
+						if _xComponent > -1 && _xComponent < global.GRIDSIZE &&
+						_yComponent > -1 && _yComponent < global.GRIDSIZE
+						{
+							if cardGrid[_xComponent][_yComponent] == 0
+							{
+								free++;
+							}
+						}
+						if free == array_length(patterns[order[placements]]){
+							finished = false;
+						}
+						i++;
+					}
+					_x++;
+				}
+				_y++;
+			}
+			
 			if placeTurn == 0{
 				placeTurn = placementTurns;
 				player++;
@@ -79,9 +113,7 @@ if mouse_check_button_pressed(mb_left) && !finished
 	}
 }
 	
-//placement colour
 
 //ghost placement
-
 x = mouse_x-sprite_width/2;
 y = mouse_y-sprite_height/2;
