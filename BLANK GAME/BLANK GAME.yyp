@@ -64,7 +64,6 @@
     {"id":{"name":"rm_Setting","path":"rooms/rm_Setting/rm_Setting.yy",},},
     {"id":{"name":"CreateRandomColour","path":"scripts/CreateRandomColour/CreateRandomColour.yy",},},
     {"id":{"name":"Macros","path":"scripts/Macros/Macros.yy",},},
-    {"id":{"name":"Shader2","path":"shaders/Shader2/Shader2.yy",},},
     {"id":{"name":"shd_Players","path":"shaders/shd_Players/shd_Players.yy",},},
     {"id":{"name":"Character_selection_noise","path":"sounds/Character_selection_noise/Character_selection_noise.yy",},},
     {"id":{"name":"Drop_off","path":"sounds/Drop_off/Drop_off.yy",},},
