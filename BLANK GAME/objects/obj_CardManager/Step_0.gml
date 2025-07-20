@@ -100,7 +100,7 @@ if mouse_check_button_pressed(mb_left) && !finished
 				}
 				_y++;
 			}
-			
+			//cycle to the next player
 			if placeTurn == 0{
 				placeTurn = placementTurns;
 				player++;
@@ -109,6 +109,40 @@ if mouse_check_button_pressed(mb_left) && !finished
 					player = 1;
 				}
 			}
+			//calculate points
+			var j = 0;
+			repeat(global.GRIDSIZE){
+				repeat(global.GRIDSIZE){
+					var matchingNeighbour = 0;
+					var differentNeighbour = 0;
+					var k = 1;
+					repeat(global.PLAYERNUMB)
+					{
+						if cardGrid[i][j] == k
+						{
+							//checking neighbors
+							if (i < global.GRIDSIZE) if (cardGrid[i+1][j] == k) matchingNeighbour++;
+							if (i != 0) if (cardGrid[i-1][j] == k) matchingNeighbour++;
+							if (j < global.GRIDSIZE) if (cardGrid[i][j+1] == k) matchingNeighbour++;
+							if (j != 0 )if (cardGrid[i][j-1] == k) matchingNeighbour++;
+				
+				
+							if (i < global.GRIDSIZE) if (cardGrid[i+1][j] != k) && (cardGrid[i+1][j] != 0) differentNeighbour++;
+							if (i != 0) if (cardGrid[i-1][j] != k) && (cardGrid[i-1][j] != 0) differentNeighbour++;
+							if (j < global.GRIDSIZE) if (cardGrid[i][j+1] != k) && (cardGrid[i][j+1] != 0) differentNeighbour++;
+							if (j != 0 ) if (cardGrid[i][j-1] != k) && (cardGrid[i+1][j-1] != 0) differentNeighbour++;
+							
+							difpoints += differentNeighbour;
+							
+						}
+						k++;
+					}
+					i++;
+				}
+				j++;
+				i = 0;
+			}	
+			
 		}
 	}
 }
