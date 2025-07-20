@@ -67,8 +67,52 @@ if mouse_check_button_pressed(mb_left) && !finished
 					placements = 0;
 				}	
 			}
+
+
+			//calculate points
+			i = 0;
+			repeat(array_length(patterns[_pattern]))
+			{
+				//get the x and y of the tile being checked in the pattern
+				var _xComponent = _xCoord-patterns[_pattern][i][0];
+				var _yComponent = _yCoord-patterns[_pattern][i][1];
+				var differentNeighbour = 0;
+		
+				//checking neighbors							
+				if (_xComponent < global.GRIDSIZE){
+					if (cardGrid[_xComponent+1][_yComponent] != player) && (cardGrid[_xComponent+1][_yComponent] != 0){
+						instance_create_depth(x1+_xComponent*cellSize+cellSize,x1+_yComponent*cellSize+cellSize/2,0,obj_Particle);
+						differentNeighbour++;
+					}
+				}
+				if (_xComponent != 0){
+					if (cardGrid[_xComponent-1][_yComponent] != player) && (cardGrid[_xComponent-1][_yComponent] != 0){
+						instance_create_depth(x1+_xComponent*cellSize,x1+_yComponent*cellSize+cellSize/2,0,obj_Particle);
+						differentNeighbour++;
+					}
+				}
+				if (_yComponent < global.GRIDSIZE){
+					if (cardGrid[_xComponent][_yComponent+1] != player) && (cardGrid[_xComponent][_yComponent+1] != 0){
+						instance_create_depth(x1+_xComponent*cellSize+cellSize/2,x1+_yComponent*cellSize+cellSize,0,obj_Particle);
+						differentNeighbour++;
+					}
+				}
+				if (_yComponent != 0 ){
+					if (cardGrid[_xComponent][_yComponent-1] != player) && (cardGrid[_xComponent][_yComponent-1] != 0){
+						instance_create_depth(x1+_xComponent*cellSize+cellSize/2,x1+_yComponent*cellSize,0,obj_Particle);
+						differentNeighbour++;
+					}
+				}
+							
+				difpoints += differentNeighbour;
 				
-			//check if next is possible
+				i++;
+			}
+
+
+
+				
+			//check if game finished
 			finished = true;
 			var free = 0;
 			var _y = 0;
@@ -109,39 +153,7 @@ if mouse_check_button_pressed(mb_left) && !finished
 					player = 1;
 				}
 			}
-			//calculate points
-			var j = 0;
-			repeat(global.GRIDSIZE){
-				repeat(global.GRIDSIZE){
-					var matchingNeighbour = 0;
-					var differentNeighbour = 0;
-					var k = 1;
-					repeat(global.PLAYERNUMB)
-					{
-						if cardGrid[i][j] == k
-						{
-							//checking neighbors
-							if (i < global.GRIDSIZE) if (cardGrid[i+1][j] == k) matchingNeighbour++;
-							if (i != 0) if (cardGrid[i-1][j] == k) matchingNeighbour++;
-							if (j < global.GRIDSIZE) if (cardGrid[i][j+1] == k) matchingNeighbour++;
-							if (j != 0 )if (cardGrid[i][j-1] == k) matchingNeighbour++;
-				
-				
-							if (i < global.GRIDSIZE) if (cardGrid[i+1][j] != k) && (cardGrid[i+1][j] != 0) differentNeighbour++;
-							if (i != 0) if (cardGrid[i-1][j] != k) && (cardGrid[i-1][j] != 0) differentNeighbour++;
-							if (j < global.GRIDSIZE) if (cardGrid[i][j+1] != k) && (cardGrid[i][j+1] != 0) differentNeighbour++;
-							if (j != 0 ) if (cardGrid[i][j-1] != k) && (cardGrid[i+1][j-1] != 0) differentNeighbour++;
-							
-							difpoints += differentNeighbour;
-							
-						}
-						k++;
-					}
-					i++;
-				}
-				j++;
-				i = 0;
-			}	
+			
 			
 		}
 	}
