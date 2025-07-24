@@ -19,6 +19,15 @@ repeat(global.GRIDSIZE){
 }
 
 
+//set ghost colour to player colour
+playerColour = variable_global_get("p"+string(player)+"Colour");
+
+if !is_numeric(playerColour){
+	playerColour = CreateRandomColour();
+	variable_global_set("p"+string(player)+"Colour",playerColour);
+}
+
+
 //draw ghost block
 if !finished{
 	i = 0;
@@ -36,20 +45,15 @@ if !finished{
 
 
 
-//set ghost colour to player colour
-playerColour = variable_global_get("p"+string(player)+"Colour");
 
-if !is_numeric(playerColour){
-	playerColour = CreateRandomColour();
-	variable_global_set("p"+string(player)+"Colour",playerColour);
-}
 
-//draw the placement
-shader_set(shd_Players);
+//////draw the placement
 
-shader_set_uniform_f_array(u_rgb,
-	[color_get_red(playerColour),
-	color_get_green(playerColour),
-	color_get_blue(playerColour)]);
+////shader_set(shd_Players);
+
+////shader_set_uniform_f_array(u_rgb,
+////	[color_get_red(playerColour),
+////	color_get_green(playerColour),
+////	color_get_blue(playerColour)]);
 draw_self();
-shader_reset();
+////shader_reset();

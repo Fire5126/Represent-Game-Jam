@@ -10,5 +10,9 @@ if mouse_check_button(mb_left) && point_in_rectangle(mouse_x,mouse_y,bbox_left,b
 	cd = cooldown;
 	cooldown -= 3;
 }
+if mouse_check_button_released(mb_left)
+{
+	cd = 0;
+}
 cd--;
 cooldown = lerp(cooldown,30,0.01);

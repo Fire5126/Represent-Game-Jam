@@ -81,25 +81,53 @@ if mouse_check_button_pressed(mb_left) && !finished
 				//checking neighbors							
 				if (_xComponent < global.GRIDSIZE){
 					if (cardGrid[_xComponent+1][_yComponent] != player) && (cardGrid[_xComponent+1][_yComponent] != 0){
-						instance_create_depth(x1+_xComponent*cellSize+cellSize,x1+_yComponent*cellSize+cellSize/2,0,obj_Particle);
+						var k = 0;
+						repeat(5){
+							instance_create_depth(x1+_xComponent*cellSize+cellSize,x1+_yComponent*cellSize+cellSize*k/4,0,obj_Particle,{
+								colour : variable_global_get("p"+string(player)+"Colour"),
+								player : player
+								});
+							k++;
+						}
 						differentNeighbour++;
 					}
 				}
 				if (_xComponent != 0){
 					if (cardGrid[_xComponent-1][_yComponent] != player) && (cardGrid[_xComponent-1][_yComponent] != 0){
-						instance_create_depth(x1+_xComponent*cellSize,x1+_yComponent*cellSize+cellSize/2,0,obj_Particle);
+						var k = 0;
+						repeat(5){
+							instance_create_depth(x1+_xComponent*cellSize,x1+_yComponent*cellSize+cellSize*k/4,0,obj_Particle,{
+							colour : variable_global_get("p"+string(player)+"Colour"),
+							player : player
+							});
+							k++;
+						}
 						differentNeighbour++;
 					}
 				}
 				if (_yComponent < global.GRIDSIZE){
 					if (cardGrid[_xComponent][_yComponent+1] != player) && (cardGrid[_xComponent][_yComponent+1] != 0){
-						instance_create_depth(x1+_xComponent*cellSize+cellSize/2,x1+_yComponent*cellSize+cellSize,0,obj_Particle);
+						var k = 0;
+						repeat(5){
+							instance_create_depth(x1+_xComponent*cellSize+cellSize*k/4,x1+_yComponent*cellSize+cellSize,0,obj_Particle,{
+								colour : variable_global_get("p"+string(player)+"Colour"),
+								player : player
+								});
+							k++;
+						}
 						differentNeighbour++;
 					}
 				}
 				if (_yComponent != 0 ){
 					if (cardGrid[_xComponent][_yComponent-1] != player) && (cardGrid[_xComponent][_yComponent-1] != 0){
-						instance_create_depth(x1+_xComponent*cellSize+cellSize/2,x1+_yComponent*cellSize,0,obj_Particle);
+						var k = 0;
+						repeat(5){
+							instance_create_depth(x1+_xComponent*cellSize+cellSize*k/4,x1+_yComponent*cellSize,0,obj_Particle,{
+								colour : variable_global_get("p"+string(player)+"Colour"),
+								player : player
+								});
+								k++;
+						}
 						differentNeighbour++;
 					}
 				}
